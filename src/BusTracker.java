@@ -11,7 +11,7 @@ public class BusTracker {
     public static void main(String[] args) {
         try {
           Connection conn = DatabaseConnection.getInstance().getConnection();
-            conn.setSchema("SYSTEM");
+            conn.setSchema("makkah");
             Statement stmt = conn.createStatement();
 
            UserAuth userAuth = new UserAuth(conn);
@@ -113,6 +113,7 @@ class UserAuth {
         }
     }
 }
+
 
 class MainMenu {
     private final Connection conn;
