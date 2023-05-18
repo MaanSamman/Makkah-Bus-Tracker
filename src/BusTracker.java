@@ -6,6 +6,7 @@ public class BusTracker {
 
     static Statement stmt = null;
     static ResultSet rs = null;
+    
     static int userId = 0;
 
     public static void main(String[] args) {
